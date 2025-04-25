@@ -1,0 +1,42 @@
+{
+  "title": "Transactions",
+  "list": {
+    "columns": {
+      "reference": "Reference",
+      "concept": "Concept",
+      "description": "Description",
+      "categories": "Categories",
+      "date": "Date",
+      "amount": "Amount",
+      "balance": "Balance",
+      "edit_categories": "Edit categories"
+    }
+  },
+  "edit": {
+    "title": "Edit translation",
+    "inputs": {
+      "reference": {
+        "label": "Reference"
+      },
+      "description": {
+        "label": "Description"
+      },
+      "concept": {
+        "label": "Concept"
+      }
+    },
+    "actions": {
+      "edit": "Edit",
+      "cancel": "Cancel"
+    }
+  },
+  "categories": {
+    "modal": {
+      "title": "Modify categories",
+      "actions": {
+        "save": "Save",
+        "cancel": "Cancel"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "app-name": "Cuentas",
+  "title": "Cuentas",
+  "loading": "Loading ...",
+  "navigation": {
+    "home": "Home",
+    "signIn": "Login",
+    "signUp": "Register",
+    "profile": "Profile",
+    "users": "Users",
+    "logout": "Logout",
+    "categories": "Categories",
+    "transactions": "Transactions",
+    "dashboard": "Dashboard",
+    "theme": "Switch theme",
+    "header": {
+      "sections": "Sections",
+      "admin": "Admin"
+    }
+  },
+  "formInputs": {
+    "avatarInput": {
+      "dropzoneText": "Drop the image here ...",
+      "dragAndDrop": "Or drag 'n' drop some files here",
+      "selectFile": "Select an image"
+    }
+  },
+  "leavePage": {
+    "title": "Leave this page?",
+    "message": "Changes you made may not be saved",
+    "stay": "Stay on Page",
+    "leave": "Leave Page"
+  },
+  "auth": {
+    "facebook": {
+      "action": "Login with Facebook"
+    }
+  },
+  "dial": {
+    "label": "Main actions",
+    "actions": {
+      "import": "Import transactions",
+      "category": "Create category"
+    }
+  },
+  "home": {
+    "more-transactions": "Show all transactions",
+    "last-movements": "Last movements"
+  },
+  "table": {
+    "no-results": "No data",
+    "edit": "Edit"
+  },
+  "date-range": {
+    "cancel": "Cancel",
+    "apply": "Apply"
+  }
+}

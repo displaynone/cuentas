@@ -1,0 +1,52 @@
+{
+  "title": "Categories",
+  "create": {
+    "title": "Create Category",
+    "inputs": {
+      "name": {
+        "validation": { "required": "Name is required" },
+        "label": "Name"
+      },
+      "description": {
+        "label": "Description"
+      },
+      "match": {
+        "validation": { "required": "Match is required" },
+        "label": "Match",
+        "description": "Write text or regular expressions, one per line, to match the category"
+      }
+    },
+    "actions": {
+      "submit": "Create",
+      "cancel": "Cancel"
+    }
+  },
+  "alerts": {
+    "create": {
+      "success": "Category created successfuly"
+    },
+    "edit": {
+      "success": "Category edited successfuly"
+    }
+  },
+  "actions": {
+    "create": "New Category"
+  },
+  "list": {
+    "columns": {
+      "name": "Name",
+      "description": "Description",
+      "match": "Match"
+    }
+  },
+  "edit": {
+    "title": "Edit category",
+    "actions": {
+      "edit": "Update",
+      "cancel": "Cancel"
+    }
+  },
+  "delete": {
+    "ok": "Category deleted"
+  }
+}

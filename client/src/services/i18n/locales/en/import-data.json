@@ -1,0 +1,13 @@
+{
+  "title": "Import transactions",
+  "upload": "Upload a file",
+  "description": "Upload a CSV file with your transactions",
+  "selectedFile": "Selected file",
+  "importing": "Importing...",
+  "error": {
+    "404": "The request you made could not be found"
+  },
+  "success": {
+    "import": "Transactions imported successfully"
+  }
+}

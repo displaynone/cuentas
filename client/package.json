@@ -1,0 +1,154 @@
+{
+  "name": "reactjs-boilerplate",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "build:e2e": "cp -n example.env.local .env.local && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "is-ci || husky",
+    "release": "release-it",
+    "generate:resource": "hygen generate resource",
+    "postgenerate:resource": "npm run lint -- --fix",
+    "sb": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.0.0",
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "@eslint/compat": "^1.2.7",
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.21.0",
+    "@playwright/test": "^1.43.1",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/nextjs": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/test": "^8.1.10",
+    "@types/imap": "^0.8.40",
+    "@types/js-cookie": "^3.0.3",
+    "@types/mailparser": "^3.4.4",
+    "@types/numeral": "^2.0.5",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-storybook": "^0.11.0",
+    "husky": "^9.0.10",
+    "hygen": "^6.2.11",
+    "is-ci": "^4.0.0",
+    "languine": "^1.0.2",
+    "prettier": "^3.2.5",
+    "release-it": "^17.1.1",
+    "storybook": "^8.1.10"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {
+              "type": "perf",
+              "section": "Performance Improvements"
+            },
+            {
+              "type": "revert",
+              "section": "Reverts"
+            },
+            {
+              "type": "docs",
+              "section": "Documentation"
+            },
+            {
+              "type": "refactor",
+              "section": "Code Refactoring"
+            },
+            {
+              "type": "test",
+              "section": "Tests"
+            },
+            {
+              "type": "ci",
+              "section": "Continuous Integration"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "overrides": {
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@faker-js/faker": "^9.5.0",
+    "@fontsource/inter": "^5.2.5",
+    "@fontsource/roboto": "^5.1.1",
+    "@hookform/resolvers": "^4.1.2",
+    "@mui/icons-material": "^6.4.6",
+    "@mui/material": "^6.4.6",
+    "@mui/x-charts": "^8.0.0-beta.3",
+    "@mui/x-date-pickers": "^7.27.3",
+    "@react-oauth/google": "^0.12.1",
+    "@tanstack/react-query": "^5.66.9",
+    "@tanstack/react-query-devtools": "^5.66.9",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "accept-language": "^3.0.20",
+    "body-parser": "^1.20.3",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.21.0",
+    "eslint-config-next": "^15.1.7",
+    "i18next": "^24.2.2",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-resources-to-backend": "^1.2.1",
+    "imap": "^0.8.19",
+    "js-cookie": "^3.0.5",
+    "mailparser": "^3.7.2",
+    "mui-tiptap": "^1.18.0",
+    "nanoid": "^5.1.2",
+    "next": "^15.1.7",
+    "numeral": "^2.0.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-dropzone": "^14.3.8",
+    "react-hook-form": "^7.54.2",
+    "react-i18next": "^15.4.1",
+    "react-toastify": "^11.0.5",
+    "react-virtuoso": "^4.12.5",
+    "typescript": "^5.7.3",
+    "yup": "^1.6.1"
+  }
+}
