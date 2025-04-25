@@ -2,6 +2,8 @@
 
 A full-stack app (backend + frontend) to keep track of your bank account with precision. Simple, fast, and designed so you never lose sight of a single cent.
 
+![](./docs/screenshot.png)
+
 ## 🧱 Tech Stack
 
 - **Frontend**: [React](https://reactjs.org/), bootstrapped with [bcboilerplates](https://bcboilerplates.com/)
