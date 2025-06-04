@@ -152,7 +152,7 @@ export class TransactionRelationalRepository implements TransactionRepository {
     } else if (options.from) {
       query.where({ date: MoreThanOrEqual(options.from) });
     } else if (options.to) {
-      query.where({ date: LessThanOrEqual(options.from) });
+      query.where({ date: LessThanOrEqual(options.to) });
     }
     query
       .groupBy('YEAR(transaction.date)')
@@ -178,7 +178,7 @@ export class TransactionRelationalRepository implements TransactionRepository {
     } else if (options.from) {
       query.where({ date: MoreThanOrEqual(options.from) });
     } else if (options.to) {
-      query.where({ date: LessThanOrEqual(options.from) });
+      query.where({ date: LessThanOrEqual(options.to) });
     }
     query
       .groupBy('YEAR(transaction.date)')
@@ -205,7 +205,7 @@ export class TransactionRelationalRepository implements TransactionRepository {
     } else if (options.from) {
       query.where({ date: MoreThanOrEqual(options.from) });
     } else if (options.to) {
-      query.where({ date: LessThanOrEqual(options.from) });
+      query.where({ date: LessThanOrEqual(options.to) });
     }
     query
       .groupBy('YEAR(transaction.date)')
@@ -238,7 +238,7 @@ export class TransactionRelationalRepository implements TransactionRepository {
     } else if (options.from) {
       query.where({ date: MoreThanOrEqual(options.from) });
     } else if (options.to) {
-      query.where({ date: LessThanOrEqual(options.from) });
+      query.where({ date: LessThanOrEqual(options.to) });
     }
     query
       .groupBy('YEAR(transaction.date)')
@@ -269,7 +269,7 @@ export class TransactionRelationalRepository implements TransactionRepository {
     } else if (options.from) {
       query.where({ date: MoreThanOrEqual(options.from) });
     } else if (options.to) {
-      query.where({ date: LessThanOrEqual(options.from) });
+      query.where({ date: LessThanOrEqual(options.to) });
     }
     query
       .groupBy('YEAR(transaction.date)')
@@ -301,7 +301,7 @@ export class TransactionRelationalRepository implements TransactionRepository {
     } else if (options.from) {
       query.where({ date: MoreThanOrEqual(options.from) });
     } else if (options.to) {
-      query.where({ date: LessThanOrEqual(options.from) });
+      query.where({ date: LessThanOrEqual(options.to) });
     }
     query
       .groupBy('YEAR(transaction.date)')
